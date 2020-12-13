@@ -40,7 +40,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  margin: 0 30px;
+  padding:10px 15px;
   font-weight: lighter;
   font-size: 22px;
 }
@@ -81,13 +81,16 @@ section {
 
 /* HERO STYLES START */
 .hero {
+  align-items: flex-start;
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   height: 600px;
 }
-
+.hero-cta{
+  line-height: 1.2;
+}
 .hero-form {
   border: 3px solid #024e76;
   background-color: #fce138;
@@ -133,7 +136,7 @@ section {
 
 /* SECTION TITLE STYLES START */
 .section-title {
-  font-size: 55px;
+  font-size: 48px;
   display: inline-block;
   padding: 0 100px 20px 100px;
   border-bottom: 3px solid;
@@ -289,4 +292,32 @@ section {
 
 .text-right {
   text-align: right;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2, footer div {
+    text-align: center;
+    width: 100%;
+  }
 }
